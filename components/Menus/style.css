@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menus {
+  @apply flex gap-4;
+}
+
+.menu {
+  @apply relative;
+  transition: .2s;
+}
+
+.menu:hover {
+  @apply text-primary;
+}
+
+.menu::before {
+  content: "";
+  @apply absolute w-full h-[1px] -bottom-1 bg-foreground-secondary;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.menu:hover::before {
+  transform: scaleX(1);
+}

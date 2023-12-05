@@ -1,0 +1,5 @@
+.footer {
+    @apply bg-background-secondary w-full h-16 shadow-md font-bold;
+    @apply px-4 tablet:px-8 laptop:px-20 desktop:px-72;
+    @apply flex items-center flex-row-reverse;
+}

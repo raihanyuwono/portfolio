@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-switcher {
+  @apply relative h-[36] w-[64px] bg-background-primary;
+  @apply rounded-full border border-gray-400;
+  @apply flex items-center justify-evenly;
+  @apply cursor-pointer;
+}
+
+.switch-checker {
+  @apply absolute -left-2;
+  /* display: none; */
+}
+
+.switch-toggle {
+  @apply bg-gray-400;
+  @apply absolute w-[28px] h-[28px];
+  @apply rounded-full;
+  transition: .4s;
+}
+
+/* 
+.slider {
+  @apply absolute top-0 bottom-0 left-0 right-0;
+  @apply cursor-pointer;
+  transition: 0.4s;
+}
+
+.slider::before {
+  content: "";
+  @apply bg-green-300;
+  @apply absolute bottom-1 left-1;
+  @apply absolute;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  @apply bg-blue-400;
+}
+
+input:checked + .slider::before {
+  @apply translate-x-[26px];
+}
+
+.slider.round {
+  @apply border-r-[34px];
+}
+
+.slider.round::before {
+  @apply border-r-[50%];
+} */
