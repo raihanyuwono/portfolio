@@ -1,8 +1,11 @@
+"use client"
 import Link from "next/link";
 import Menus from "../Menus";
 import "./style.css";
 import Image from "next/image";
 import ThemeSwitcher from "../ThemeSwitcher";
+import { useContext } from "react";
+import { ThemeContext, ThemeContextType } from "@/providers/ThemeProvider";
 
 const menus = [
   { content: "Home", href: "/" },
@@ -10,20 +13,22 @@ const menus = [
   { content: "Projects", href: "/projects" },
 ];
 
-const icons = [
-  {
-    src: "/assets/icons/github.svg",
-    alt: "Github",
-    href: "https://github.com/raihanyuwono",
-  },
-  {
-    src: "/assets/icons/linkedin.svg",
-    alt: "Linkedin",
-    href: "https://www.linkedin.com/in/muhammad-raihan-wahyu-yuwono-226518103/",
-  },
-];
-
 function Navbar() {
+  const {theme} = useContext(ThemeContext) as ThemeContextType;
+
+  const icons = [
+    {
+      src: `/assets/icons/github-${theme}.svg`,
+      alt: "Github",
+      href: "https://github.com/raihanyuwono",
+    },
+    {
+      src: `/assets/icons/linkedin-${theme}.svg`,
+      alt: "Linkedin",
+      href: "https://www.linkedin.com/in/muhammad-raihan-wahyu-yuwono-226518103/",
+    },
+  ];
+
   return (
     <header className="w-full">
       <nav className="nav">
@@ -34,7 +39,7 @@ function Navbar() {
             </Link>
           ))}
         </Menus>
-        <Menus classes="gap-2">
+        <Menus classes="gap-1">
           {icons.map((icon) => (
             <Link href={icon.href} target="_blank" key={icon.alt}>
               <Image src={icon.src} alt={icon.alt} width={36} height={36} />

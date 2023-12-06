@@ -4,14 +4,14 @@ import { ThemeContext, ThemeContextType } from "@/providers/ThemeProvider";
 import Image from "next/image";
 import "./style.css";
 
-const icons = [
-  { src: "/assets/icons/moon.svg", alt: "moon" },
-  { src: "/assets/icons/sun.svg", alt: "sun" },
-];
-
 function ThemeSwitcher() {
   const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
-  const toggleClass = theme === "dark" ? "right-1" : "left-1";
+  const toggleClass = theme === "dark" ? "left-[30px]" : "left-[4px]";
+
+  const icons = [
+    { src: "/assets/icons/moon.svg", alt: "moon", hidden: theme === "dark" },
+    { src: "/assets/icons/sun.svg", alt: "sun", hidden: theme === "light" },
+  ];
 
   function switchTheme() {
     const changed = theme === "dark" ? "light" : "dark";

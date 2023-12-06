@@ -12,7 +12,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Protfolio - Muhammad Raihan Wahyu Yuwono",
+  title: "Portfolio - Muhammad Raihan Wahyu Yuwono",
   description: "Portfolio - Muhammad Raihan Wahyu Yuwono",
 };
 
