@@ -1,0 +1,52 @@
+.rain-wrapper {
+  @apply absolute top-0 bottom-0 left-0 right-0 -z-10;
+}
+
+.rain {
+  @apply relative w-full h-full;
+}
+
+.front-row {
+  @apply bg-gradient-to-t from-rain-frontrow to-transparent;
+  @apply z-[2] bottom-0 opacity-50;
+  animation: drop-front .7s linear infinite;
+}
+
+.back-row {
+  @apply bg-gradient-to-t from-rain-backrow to-transparent ;
+  @apply z-[1] bottom-16 opacity-20;
+  animation: drop-back .5s linear infinite;
+}
+
+.drop {
+  @apply absolute w-[2px] h-[120px] bottom-full;
+  @apply pointer-events-none;
+}
+
+@keyframes drop-front {
+  0% {
+    @apply bottom-[100%];
+  }
+
+  75% {
+    @apply bottom-[0%] h-[120px];
+  }
+
+  100% {
+    @apply bottom-[0%] h-0;
+  }
+}
+
+@keyframes drop-back {
+  0% {
+    @apply bottom-[100%];
+  }
+
+  75% {
+    @apply bottom-[5%] h-[120px];
+  }
+
+  100% {
+    @apply bottom-[5%] h-0;
+  }
+}

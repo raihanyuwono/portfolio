@@ -1,0 +1,26 @@
+.content {
+  @apply flex items-center;
+  @apply justify-start tablet:justify-center laptop:justify-evenly py-4 tablet:py-16 laptop:py-0;
+  @apply flex-col laptop:flex-row;
+  min-height: calc(100vh - 64px - 64px);
+}
+
+.frame {
+  @apply w-40 h-40 tablet:w-56 tablet:h-56 laptop:w-72 laptop:h-72 rounded-full;
+  @apply object-cover;
+}
+
+.separator {
+  @apply block;
+  @apply my-4 laptop:my-0 mx-0 laptop:mx-8;
+}
+
+.greeting  {
+  @apply font-firaCode;
+}
+
+.greeting {
+  @apply w-[60%];
+  @apply text-center laptop:text-right;
+  @apply font-semibold tablet:font-bold laptop:font-extrabold text-sm tablet:text-xl;
+}

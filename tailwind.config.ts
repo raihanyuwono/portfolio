@@ -22,10 +22,13 @@ const config: Config = {
         "background-secondary": "var(--background-secondary)",
         "foreground-primary": "var(--foreground-primary)",
         "foreground-secondary": "var(--foreground-secondary)",
+        "rain-frontrow": "var(--rain-frontrow)",
+        "rain-backrow": "var(--rain-backrow)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
+        firaCode: ["Fira Code", "monospace"],
       },
     },
   },

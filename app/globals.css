@@ -6,7 +6,9 @@
   --foreground-primary: #000000;
   --foreground-secondary: #181818;
   --background-primary: #e6e6e6;
-  --background-secondary: #d8d8d8;
+  --background-secondary: #dddddd;
+  --rain-frontrow: #94a3b8;
+  --rain-backrow: #94a3b8;
 }
 
 [data-theme="dark"] {
@@ -14,13 +16,23 @@
   --foreground-secondary: #e8e8e8;
   --background-primary: #1a1a1a;
   --background-secondary: #222222;
+  --rain-frontrow: #a3a3a3;
+  --rain-backrow: #e5e5e5;
 }
 
 body {
   @apply bg-background-primary text-foreground-primary;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 main {
+  @apply relative;
   min-height: calc(100vh - 64px - 64px);
+}
+
+.content {
   @apply px-4 tablet:px-8 laptop:px-20 desktop:px-72;
 }

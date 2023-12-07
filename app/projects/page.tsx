@@ -1,7 +1,7 @@
-function Home() {
-    return <main>
-      <div>PROJECTS PAGE</div>
-    </main>;
+import Project from "@/components/Contents/Project";
+
+function ProjrctPage() {
+    return <Project />
   }
   
-  export default Home;
+  export default ProjrctPage;

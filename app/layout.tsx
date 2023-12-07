@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk, Fira_Code } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,6 +10,10 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
+const firaCode = Fira_Code({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+})
 
 export const metadata: Metadata = {
   title: "Portfolio - Muhammad Raihan Wahyu Yuwono",
@@ -24,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body className={spaceGrotesk.className}>
+        <body className={inter.className}>
           <Navbar />
-          {children}
+          <main>{children}</main>
           <Footer />
         </body>
       </ThemeProvider>

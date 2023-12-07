@@ -6,7 +6,7 @@ import "./style.css";
 
 function ThemeSwitcher() {
   const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
-  const toggleClass = theme === "dark" ? "left-[30px]" : "left-[4px]";
+  const toggleClass = theme === "dark" ? "left-[50%]" : "left-[6%]";
 
   const icons = [
     { src: "/assets/icons/moon.svg", alt: "moon", hidden: theme === "dark" },
