@@ -1,6 +1,6 @@
 "use client";
 import { useContext } from "react";
-import { ThemeContext, ThemeContextType } from "@/providers/ThemeProvider";
+import { ThemeContext, ThemeContextType } from "@/app/providers/ThemeProvider";
 import Image from "next/image";
 import "./style.css";
 

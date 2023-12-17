@@ -1,0 +1,7 @@
+.content {
+  @apply py-4;
+}
+
+.title {
+  @apply text-3xl font-semibold;
+}

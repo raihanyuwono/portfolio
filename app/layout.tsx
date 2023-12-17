@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Fira_Code } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import ThemeProvider from "@/providers/ThemeProvider";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
+import ThemeProvider from "@/app/providers/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({

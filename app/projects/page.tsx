@@ -1,4 +1,4 @@
-import Project from "@/components/Contents/Project";
+import Project from "@/app/components/Contents/Project";
 
 function ProjrctPage() {
     return <Project />

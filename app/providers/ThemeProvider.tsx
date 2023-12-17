@@ -1,6 +1,6 @@
 "use client"
 import { createContext, useEffect, useState } from "react";
-import { Props } from "@/interfaces/IProps";
+import { Props } from "@/app/interfaces/IProps";
 
 export type Theme = "light" | "dark";
 export type ThemeContextType = {

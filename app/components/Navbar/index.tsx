@@ -5,7 +5,7 @@ import "./style.css";
 import Image from "next/image";
 import ThemeSwitcher from "../ThemeSwitcher";
 import { useContext } from "react";
-import { ThemeContext, ThemeContextType } from "@/providers/ThemeProvider";
+import { ThemeContext, ThemeContextType } from "@/app//providers/ThemeProvider";
 
 const menus = [
   { content: "Home", href: "/" },

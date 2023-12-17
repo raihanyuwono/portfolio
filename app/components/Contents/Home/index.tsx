@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./style.css";
-import Raining from "@/components/Backgrounds/Raining";
+import Raining from "@/app/components/Backgrounds/Raining";
 
 const photoProfile = { src: "/assets/images/profile.jpg", alt: "photo" };
 const tools = [
