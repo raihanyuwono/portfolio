@@ -3,6 +3,11 @@ import "./style.css";
 import Raining from "@/components/Backgrounds/Raining";
 
 const photoProfile = { src: "/assets/images/profile.jpg", alt: "photo" };
+const tools = [
+  {src:"", alt:"ReactJS"},
+  {src:"", alt:"NextJS"},
+  {src:"", alt:"Tailwind CSS"},
+]
 
 function Home() {
   return (
@@ -18,13 +23,8 @@ function Home() {
         />
         <div className="separator" />
         <p className="greeting">
-          <span className="text-wrapper">"</span>As a dedicated learner with
-          proficiency in web development, and problem-solving, I am eager to
-          launch a career as a Backend or Frontend Developer. My knowledge spans
-          software development and artificial intelligence, and I'm enthusiastic
-          about leveraging these skills to contribute to cutting-edge projects
-          in the field.
-          <span className="text-wrapper">"</span>
+          <span className="title">Web Developer</span>
+          <span className="quotes">Lalal</span>
         </p>
       </div>
       <Raining />

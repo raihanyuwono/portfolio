@@ -1,12 +1,12 @@
 .theme-switcher {
   @apply relative h-[36] w-[64px] bg-background-primary;
-  @apply rounded-full border border-gray-400;
+  @apply rounded-full border border-neutral-400;
   @apply flex items-center justify-evenly;
   @apply cursor-pointer;
 }
 
 .switch-toggle {
-  @apply bg-gray-400;
+  @apply bg-neutral-400;
   @apply absolute w-[28px] h-[28px];
   @apply rounded-full;
   transition: .4s ease-out;

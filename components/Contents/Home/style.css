@@ -16,11 +16,16 @@
 }
 
 .greeting  {
-  @apply font-firaCode;
+  @apply font-firaCode flex flex-col gap-2 tablet:gap-4 laptop:gap-8;
 }
 
 .greeting {
   @apply w-[60%];
   @apply text-center laptop:text-right;
-  @apply font-semibold tablet:font-bold laptop:font-extrabold text-sm tablet:text-xl;
+  @apply font-medium tablet:font-semibold laptop:font-bold text-sm tablet:text-xl;
+}
+
+.title {
+  @apply text-[24px] tablet:text-[32px] laptop:text-[48px];
+  @apply font-semibold tablet:font-bold laptop:font-extrabold;
 }

@@ -5,3 +5,11 @@
   @apply font-spaceGrotesk font-semibold;
   @apply shadow-md;
 }
+
+.reference {
+  transition: .3s ease-in-out;
+}
+
+.reference:hover {
+  transform: scale(1.2);
+}

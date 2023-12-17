@@ -34,16 +34,16 @@ function Navbar() {
       <nav className="nav">
         <Menus>
           {menus.map((menu) => (
-            <Link className="menu" href={menu.href} key={menu.content}>
+            <Link className="menu" href={menu.href} key={menu.content} prefetch={false}>
               {menu.content}
             </Link>
           ))}
         </Menus>
         <Menus classes="gap-1">
           {icons.map((icon) => (
-            <Link href={icon.href} target="_blank" key={icon.alt}>
+            <a className="reference" href={icon.href} target="_blank" key={icon.alt}>
               <Image src={icon.src} alt={icon.alt} width={36} height={36} />
-            </Link>
+            </a>
           ))}
           <ThemeSwitcher />
         </Menus>
