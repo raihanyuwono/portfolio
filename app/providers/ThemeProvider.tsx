@@ -16,6 +16,7 @@ function initialize() {
 }
 
 function getTheme(): Theme {
+  if(typeof localStorage === "undefined") return "light";
   const currentTheme = localStorage.getItem("theme") || "light";
   return currentTheme as Theme;
 }

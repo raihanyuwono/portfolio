@@ -1,4 +1,4 @@
-import { Props } from "@/interfaces/IProps";
+import { Props } from "@/app/interfaces/IProps";
 import "./style.css";
 
 function Menus({ children, classes }: Props) {
