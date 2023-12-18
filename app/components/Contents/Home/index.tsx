@@ -3,11 +3,6 @@ import "./style.css";
 import Raining from "@/app/components/Backgrounds/Raining";
 
 const photoProfile = { src: "/assets/images/profile.jpg", alt: "photo" };
-const tools = [
-  { src: "", alt: "ReactJS" },
-  { src: "", alt: "NextJS" },
-  { src: "", alt: "Tailwind CSS" },
-];
 
 function Home() {
   return (

@@ -18,6 +18,7 @@ function CardSkill({ skill }: CardProps) {
         alt={skill?.alt || ""}
         width={128}
         height={128}
+        loading="lazy"
         className="skill-item"
       />
     </div>
