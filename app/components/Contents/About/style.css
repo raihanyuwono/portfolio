@@ -3,5 +3,14 @@
 }
 
 .title {
-  @apply text-3xl font-semibold;
+  @apply text-4xl font-semibold;
+}
+
+.skill-container {
+  @apply flex flex-row justify-center flex-wrap gap-4;
+}
+
+.skill-item {
+  @apply hover:bg-rain-frontrow hover:scale-[110%] rounded-lg;
+  transition: 0.3s ease-out;
 }
