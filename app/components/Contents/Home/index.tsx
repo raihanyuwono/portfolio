@@ -4,10 +4,10 @@ import Raining from "@/app/components/Backgrounds/Raining";
 
 const photoProfile = { src: "/assets/images/profile.jpg", alt: "photo" };
 const tools = [
-  {src:"", alt:"ReactJS"},
-  {src:"", alt:"NextJS"},
-  {src:"", alt:"Tailwind CSS"},
-]
+  { src: "", alt: "ReactJS" },
+  { src: "", alt: "NextJS" },
+  { src: "", alt: "Tailwind CSS" },
+];
 
 function Home() {
   return (
@@ -24,7 +24,9 @@ function Home() {
         <div className="separator" />
         <p className="greeting">
           <span className="title-job">Web Developer</span>
-          <span className="quotes">Lalal</span>
+          <span className="quotes">
+            Hi, I am Raihan.
+          </span>
         </p>
       </div>
       <Raining />
