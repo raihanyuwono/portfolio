@@ -12,7 +12,7 @@ const tools = [
 function Home() {
   return (
     <>
-      <div className="content">
+      <div className="content content-homepage">
         <Image
           className="frame"
           src={photoProfile.src}
@@ -23,7 +23,7 @@ function Home() {
         />
         <div className="separator" />
         <p className="greeting">
-          <span className="title">Web Developer</span>
+          <span className="title-job">Web Developer</span>
           <span className="quotes">Lalal</span>
         </p>
       </div>

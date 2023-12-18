@@ -9,8 +9,8 @@ function ThemeSwitcher() {
   const toggleClass = theme === "dark" ? "left-[50%]" : "left-[6%]";
 
   const icons = [
-    { src: "/assets/icons/moon.svg", alt: "moon", hidden: theme === "dark" },
-    { src: "/assets/icons/sun.svg", alt: "sun", hidden: theme === "light" },
+    { src: "/assets/icons/moon.svg", alt: "moon" },
+    { src: "/assets/icons/sun.svg", alt: "sun" },
   ];
 
   function switchTheme() {
